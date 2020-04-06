@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Event Manipulations</title>
+ </head>
+ <body>
+
+    <h1>Event Manipulations</h1>
+
+    <ul>
+      <li> <input id="idItem" value="Event Manipulations" style="width:150px"></li>
+    </ul>
+
+    
+    <script>
+        var enterTextInput = document.getElementById('idItem'); //functions
+        var onfocus = function(e) {
+            enterTextInput.style.color = "red" ;  //focus on the object, the color is red inside the box
+        };
+
+         var onblur = function(e) {
+            enterTextInput.style.color = "blue" ; //blur on the object, the color is blue outside the box
+        };
+
+         
+         var onkeydown = function(e) {
+            enterTextInput.style.width = "80px" ; // the size of the box by default
+        };
+
+        var onkeyup = function(e) {
+            enterTextInput.style.width = "250px" ; // the size of the box when is texting
+        };
+
+        //adding event manipulations
+        enterTextInput.addEventListener('focus', onfocus);
+        enterTextInput.addEventListener('blur', onblur);
+        enterTextInput.addEventListener('keydown', onkeydown);
+        enterTextInput.addEventListener('keyup', onkeyup);
+
+    </script>
+
+ </body>
+</html>
