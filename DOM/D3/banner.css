@@ -1,0 +1,8 @@
+.banner {
+  width: 50%;
+  height: 100px;
+  display: table;
+  text-align: center;
+  background: #33cccc;
+  color: white;
+}

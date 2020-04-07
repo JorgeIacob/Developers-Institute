@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+<p><button onclick="myMove()">Click Me</button></p>
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+<script>function myMove() {
+var elem = document.getElementById("animate");
+  left = 0;
+  
+// Move the element 10px on the right every 16ms
+timer = setInterval(function() {
+  elem.style.left = ( left += 10 ) + "px";
+  // clear the timer at 400px to stop the animation
+  if ( left == 400 ) {
+    clearInterval( timer );
+  }
+}, 16);
+}</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>Input only alphabets in textbox</title>
+  <h2>Write ONLY letters</h2>
+    <script> 
+
+        function onlyAlphabets(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                }
+                else if (e) {
+                    var charCode = e.which;
+                }
+                else { return true; }
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+                    return true;
+                else
+                    return false;
+            }
+            catch (err) {
+                alert(err.Description);
+            }
+        } 
+
+    </script>
+</head>
+<body>
+    <table align="left">
+        <tr>
+            <td>
+                <input type="text" onkeypress="return onlyAlphabets(event,this);" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
