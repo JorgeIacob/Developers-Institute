@@ -1,0 +1,96 @@
+.correo {
+	display: flex;
+	justify-content: flex-end;
+	width:65%;
+
+	}
+
+.button {
+	font-size: 20px;
+}
+
+.jumbotron {
+
+	width:100%;
+}
+
+
+.btnLogin
+{
+	vertical-align: center ;
+	font-size:16px;
+	text-align: center ;
+}
+
+.ml3 {
+	margin-left: 20px;
+  font-weight: 600;
+  font-size: 1.2em;
+  color:rgb(120,120,120);
+}
+
+h4
+{
+	margin-left:20px;
+	/*text-align: center ;*/
+	color:rgb(120,120,120);
+}
+
+.footer {
+ 
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+/*ul {
+
+	background-color: #696969; 
+	position: fixed;
+	top: 0;
+	width: 100%
+
+}
+
+h2 {
+
+	font-color: black;
+	font-size: 24;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form {
+
+    float: right;
+    margin: right; 
+    text-align: right;
+    
+} 
+
+button {
+
+	font-size: 20;
+	background-color: #696969;
+	margin:auto;
+}
+
+.jumbotron {
+
+	width:100%;
+}
+
+.card {
+
+    align-content:left;
+    margin: auto; 
+    text-align: left;
+    
+	
+}*/
