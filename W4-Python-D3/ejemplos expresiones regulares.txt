@@ -1,0 +1,49 @@
+# import re
+#EXAMPLES regular expressions
+#
+# # palabra = "mágica"
+# # texto = "En esta cadena se encuentra una palabra mágica"
+# # encontrado = re.search(palabra,  texto)
+# #
+# # if encontrado:
+# #     print("Se ha encontrado la palabra:", palabra)
+# # else:
+# #     print("No se ha encontrado la palabra:", palabra)
+# #
+# # print( encontrado.start() )
+# # print( encontrado.end() )
+# # print( encontrado.span() )
+# # print( encontrado.string )
+#
+# texto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+# patron = "Lorem"
+#
+# x = re.search(patron, texto)  # Busca el patron dentro del texto
+#
+# print(x.span())  # Escribe la posicion inicial y final de la ocurrencia
+#
+# texto = input("Introduce una secuencia binaria de cinco cifras:\n")
+# patron = "(0.{3}0)|(1.{3}1)"
+#
+# valido = False
+#
+# # Se comprueba que el input sea valido:
+# if len(texto) == 5:
+#     valido = True
+#     for i in texto:
+#         if i != '0' and i != '1':
+#             valido = False
+#             break
+#
+# # Si el input es valido, se compreuba si es capicua
+# if valido:
+#     x = re.search(patron, texto)
+#     if (x != None):
+#         print("Es capicua!")
+#     else:
+#         print("No es capicua!")
+#
+# # Si el input no es valido, aparece un mensaje de error:
+# else:
+#     print("ERROR: texto no valido")
+#
