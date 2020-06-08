@@ -1,0 +1,3 @@
+The project is about a "researcher app" for journalists, in it they can research about topics in structured mode that Google or another search engines not provides you in direct way.
+It can be useful for quantitative research based on queries that can store in databases. In the dashboard of the user, will be an item "my researches"  that can be revisited, modified, updated.
+The app research will be database friendly, so that the user will be able to research according to parameters provided by sql. APIs and data extraction will be the relevant technologies here
